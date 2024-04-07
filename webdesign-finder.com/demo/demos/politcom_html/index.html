@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from webdesign-finder.com/demo/demos/politcom_html/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 15 Jul 2020 18:35:46 GMT -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="MWTemplates aka modernwebtemplates MR. Handyman WordPress theme demo">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MWTemplates - Polytico HTML theme demo</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="http://webdesign-finder.com/demo/demos/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="css/font-awesome4.7.css">
+    <link rel="stylesheet" href="http://webdesign-finder.com/demo/demos/css/main.css">
+    <link rel="stylesheet" href="css/main.css">
+    <style>
+        /* styles individual for every template */
+
+
+        /* styles for hovers - depends from homepage screenshot height */
+
+        .page_header_wrapper {
+            padding: 0;
+        }
+
+        a.logo {
+            margin-bottom: 0;
+        }
+
+        .logo span {
+            font-size: 30px;
+            font-weight: bold;
+        }
+
+        .row {
+            max-width: unset;
+        }
+
+        @media (min-width: 992px) {
+            .col-md-6 {
+                padding-left: 30px;
+                padding-right: 30px;
+            }
+        }
+
+        .inside_image {
+            bottom: 15%;
+            left: 0;
+            right: 0;
+            top: 0;
+        }
+
+        .inside_image img {
+            transition: all 2.5s ease-in-out;
+        }
+
+        .inside_image.type1:hover img {
+            transform: translateY(-84.5%);
+        }
+
+        .inside_image.type2:hover img {
+            transform: translateY(-74.5%);
+        }
+
+        .inside_image.type3:hover img {
+            transform: translateY(-85.5%);
+        }
+
+        .inside_image.type4:hover img {
+            transform: translateY(-81.5%);
+        }
+
+        /*preview*/
+        .preview {
+            background: url("images_small/intro_bg.jpg") no-repeat left / cover;
+        }
+
+        .preview .content {
+            padding-top: 200px;
+            padding-bottom: 200px;
+            max-width: 380px;
+        }
+
+        .preview p {
+            font-size: 24px;
+            color: #fff;
+        }
+
+        .preview .container-fluid {
+            padding-left: 160px;
+            padding-right: 160px;
+        }
+
+        @media (max-width: 1199px) {
+            .preview .content {
+                padding-top: 120px;
+                padding-bottom: 120px;
+            }
+        }
+
+        @media (max-width: 767px) {
+            .preview .content {
+                padding-top: 90px;
+                padding-bottom: 90px;
+                max-width: unset;
+                text-align: center;
+            }
+
+            .preview .container-fluid {
+                padding-left: 25px;
+                padding-right: 25px;
+            }
+        }
+
+        /* count_homes */
+
+        .count_homes {
+            width: 325px;
+            height: 325px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.07);
+            background-color: rgba(237, 66, 102, 0);
+            margin-left: auto;
+            margin-right: auto;
+            flex-direction: column;
+            line-height: 1;
+        }
+
+        .count_homes span:first-child {
+            font-size: 180px;
+            color: #ed4266;
+            font-weight: 300;
+            line-height: 0.9;
+        }
+
+        .count_homes span:last-child {
+            letter-spacing: 1em;
+            text-indent: 1em;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+
+        .count_homes + p {
+            font-size: 30px;
+            color: #36404c;
+            font-weight: 300;
+            line-height: 1.3;
+        }
+
+        @media (max-width: 576px) {
+            .count_homes {
+                width: 255px;
+                height: 255px;
+            }
+
+            .count_homes span:first-child {
+                font-size: 150px;
+            }
+        }
+
+        .demo {
+            overflow: visible;
+            box-shadow: 0 2px 15px 0 rgba(100, 100, 100, 0.05);
+        }
+
+        .demo_name {
+            bottom: 4.8%;
+            text-transform: capitalize;
+            font-size: 20px;
+            font-weight: 500;
+        }
+
+        .demo_name span {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            color: #ed4266;
+            opacity: .1;
+            font-weight: bolder;
+            font-size: 60px;
+            top: -18px;
+        }
+
+        .footer h4 {
+            font-weight: 300;
+            line-height: 1.2;
+        }
+
+        @media (max-width: 576px) {
+            .footer h4 {
+                font-size: 1.3em;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+<div id="box_wrapper">
+    <header class="page_header ls justify-nav-end">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div class="col-xl-3 col-md-4 col-10">
+                    <a href="index.html" class="logo">
+                        <img src="images_small/logo.png" class="mr-3" alt="img">
+                        <span>Polytico</span>
+                    </a>
+                </div>
+                <div class="col-xl-9 col-1">
+                    <!-- main nav start -->
+                    <nav class="top-nav">
+                        <ul class="nav sf-menu">
+
+                            <li>
+                                <a href="#features">Features</a>
+                            </li>
+                            <li>
+                                <a target="_blank" href="http://webdesign-finder.com/html/polytico/">Political Candidate</a>
+                            </li>
+                            <li>
+                                <a target="_blank" href="http://webdesign-finder.com/html/polytico/index_party.html">Political Party</a>
+                            </li>
+                            <li>
+                                <a target="_blank" href="http://webdesign-finder.com/html/polytico/index_charity.html">Charity Organization</a>
+                            </li>
+                            <li>
+                                <a target="_blank" href="http://webdesign-finder.com/html/polytico/index_church.html">Church & Religion</a>
+                            </li>
+                        </ul>
+                        <a target="_blank" href="https://themeforest.net/cart/add_items?item_ids=23270211"
+                       class="btn btn-small btn-maincolor">Purchase</a>
+                    </nav>
+                    <!-- eof main nav -->
+                </div>
+
+            </div>
+        </div>
+        <!-- header toggler -->
+        <span class="toggle_menu"><span></span></span>
+    </header>
+
+    <section id="land" class="ds preview">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="content">
+                    <h4 class="special-heading above color-dark large">
+                        awesome
+                    </h4>
+                    <h3 class="special-heading big color-dark">
+                        HTML Theme 4
+                    </h3>
+                    <div class="divider-50"></div>
+                    <p>
+                        Political Candidate, Party,
+                        Charity, Church and other NGO
+                        Organizations
+                    </p>
+                    <div class="divider-55"></div>
+                    <a href="#homes" class="btn btn-small btn-maincolor">View Homes</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="homes" class="ls s-pb-40 s-pt-60 s-pb-md-70 s-pt-md-90 s-pb-xl-100 s-pt-xl-120 c-mb-20">
+
+        <div class="container">
+            <div class="row">
+
+                <div class="col-12 col-xl-4 offset-xl-4  text-center">
+				<span class="count_homes mb-40">
+					<span>4</span>
+					<span>homes</span>
+				</span>
+                    <p>
+                        Polytico - Multiconcept NGO
+                        HTML template
+                    </p>
+                    <div class="divider-70"></div>
+                </div>
+                <div class="col-md-6">
+                    <div class="demo">
+                        <a target="_blank" href="http://webdesign-finder.com/html/polytico/">
+                            <div class="background">
+                                <img src="img/imac.png" alt="">
+                                <span class="demo_name">
+									Political Candidate
+									<span>01</span>
+								</span>
+                            </div>
+                            <div class="inside_image type1">
+                                <img src="images_small/1.jpg" alt="">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="demo">
+                        <a target="_blank" href="http://webdesign-finder.com/html/polytico/index_party.html">
+                            <div class="background">
+                                <img src="img/imac.png" alt="">
+                                <span class="demo_name">
+									Political Party
+										<span>02</span>
+								</span>
+                            </div>
+                            <div class="inside_image type2">
+                                <img src="images_small/2.jpg" alt="">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="demo">
+                        <a target="_blank" href="http://webdesign-finder.com/html/polytico/index_charity.html">
+                            <div class="background">
+                                <img src="img/imac.png" alt="">
+                                <span class="demo_name">
+									Charity Organization
+										<span>03</span>
+								</span>
+                            </div>
+                            <div class="inside_image type3">
+                                <img src="images_small/3.jpg" alt="">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="demo">
+                        <a target="_blank" href="http://webdesign-finder.com/html/polytico/index_church.html">
+                            <div class="background">
+                                <img src="img/imac.png" alt="">
+                                <span class="demo_name">
+									Church & Religion
+										<span>04</span>
+								</span>
+                            </div>
+                            <div class="inside_image type4">
+                                <img src="images_small/4.jpg" alt="">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="features"
+             class="ls ms s-pb-40 s-pt-60 s-pb-md-70 s-pt-md-90 s-pb-xl-100 s-pt-xl-120 c-mb-20 text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h3 class="special-heading above">Our Template</h3>
+                    <h3 class="special-heading text-center underline">Core Features</h3>
+                    <div class="divider-40"></div>
+                </div>
+                <div class="col-md-6 col-xl-4">
+                    <div class="icon-box text-center">
+                        <div>
+                            <img src="icons/1.png" alt="img">
+                        </div>
+                        <h5>5-Stars Support</h5>
+                        <p>
+                            Our highly professionsl team of support cunsultants will help You
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-4">
+                    <div class="icon-box text-center">
+                        <div>
+                            <img src="icons/2.png" alt="img">
+                        </div>
+                        <h5>Bootstrap 4 Based</h5>
+                        <p>
+                            Template built with Twitter Bottstrap CSS Framework with 1170 grid system.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-4">
+                    <div class="icon-box text-center">
+                        <div>
+                            <img src="icons/5.png" alt="img">
+                        </div>
+                        <h5>100+ HTML Pages</h5>
+                        <p>
+                            Various Homepages, Blog & Folio layouts, Custom Post types, 404, FAQ, etc.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-4">
+                    <div class="icon-box text-center">
+                        <div>
+                            <img src="icons/6.png" alt="img">
+                        </div>
+                        <h5>Various Headers, Footers etc.</h5>
+                        <p>
+                            Several of header and footer variations, just pick the one you like the most
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-4">
+                    <div class="icon-box text-center">
+                        <div>
+                            <img src="icons/8.png" alt="img">
+                        </div>
+                        <h5>Working Contact Form</h5>
+                        <p>
+                            Manage contact forms and customize everything flexibly with simple markup.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-4">
+                    <div class="icon-box text-center">
+                        <div>
+                            <img src="icons/9.png" alt="img">
+                        </div>
+                        <h5>Clean & Valid Code</h5>
+                        <p>
+                            It makes site promotion in search engine easy and pain free.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-4">
+                    <div class="icon-box text-center">
+                        <div>
+                            <img src="icons/10.png" alt="img">
+                        </div>
+                        <h5>Predefined Colour Schemes</h5>
+                        <p>
+                            There are several pre-designed color chemes, so You can choose.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-4">
+                    <div class="icon-box text-center">
+                        <div>
+                            <img src="icons/11.png" alt="img">
+                        </div>
+                        <h5>SASS & Gulp Included</h5>
+                        <p>
+                            You can easily customize your HTML and CSS files with the help of Gulp & SASS
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-4">
+                    <div class="icon-box text-center">
+                        <div>
+                            <img src="icons/12.png" alt="img">
+                        </div>
+                        <h5>PSD Files Included</h5>
+                        <p>
+                            The PSD files are perfectly organized, so You could easily customize everything.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="ds footer s-py-60 s-py-md-90 s-py-xl-120 text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-8 offset-xl-2">
+                    <h4 class="mb-4">Purchase Nogoo Template
+                        & Build Beautiful Website for Your NGO Organization</h4>
+                    <a target="_blank" href="https://themeforest.net/cart/add_items?item_ids=23270211"
+                       class="btn btn-small btn-maincolor">Purchase</a>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+
+<script src="http://webdesign-finder.com/demo/demos/js/jquery-3.1.1.min.js"></script>
+<script src="http://webdesign-finder.com/demo/demos/js/owl.carousel.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/compressed.js"></script>
+<script src="http://webdesign-finder.com/demo/demos/js/main.js"></script>
+<script src="js/main.js"></script>
+
+
+</body>
+
+<!-- Mirrored from webdesign-finder.com/demo/demos/politcom_html/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 15 Jul 2020 18:38:19 GMT -->
+</html>
