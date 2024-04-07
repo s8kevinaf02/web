@@ -4,16 +4,16 @@ pipeline {
         string(name: 'BRANCH_NAME', defaultValue: 'main', description: '')
     }
     stages {
-        //stage('Clone Repository') {
-            //steps {
-               // script {
-                    // Clone the repository using SSH with private key and checkout the specific branch
-                    //git credentialsId: 'jenkins-ssh-agents-private-key',
-                        //url: 'git@github.com:DEL-ORG/s8-web.git',
-                        //branch: "${params.BRANCH_NAME}"
-               // }
-           // }
-        //}
+        stage('Clone Repository') {
+            steps {
+                script {
+                    //Clone the repository using SSH with private key and checkout the specific branch
+                    git credentialsId: 'jenkins-agent-node',
+                        url: 'https://github.com/s8kevinaf02/web.git',
+                        branch: "${params.BRANCH_NAME}"
+                }
+            }
+        }
         stage('Install Apache') {
             steps {
                 script {
