@@ -1,5 +1,0 @@
-# HTTrack Website Copier Cookie File
-# This file format is compatible with Netscape cookies
-.webdesign-finder.com	TRUE	/	FALSE	1999999999	__cfduid	d2963c4bb990d4698602522a3614cfa241594838519
-webdesign-finder.com	TRUE	/	FALSE	1999999999	SameSite	Lax
-
