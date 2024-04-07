@@ -1,7 +1,0 @@
-Mirror in progress since Wed, 15 Jul 2020 21:45:20 .. please wait!
-httrack https://html.webinane.com/lifeline/ 
-To pause the engine: create an empty file named 'hts-stop.lock'
-PID=5286
-UID=1000
-GID=1000
-START=1594838720
