@@ -1,5 +1,5 @@
 pipeline {
-    agent { label 'bulder-node' }
+    agent { label 'builder-node' }
     parameters {
         string(name: 'BRANCH_NAME', defaultValue: 'main', description: '')
     }
