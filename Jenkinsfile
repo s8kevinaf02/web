@@ -34,6 +34,7 @@ pipeline {
                         cd /var/www/html
                         ls -l
                         sudo rm -rf *
+                        sudo mkdir lifeline-web || true
                         ls -l
                     """ 
                 }
@@ -45,7 +46,7 @@ pipeline {
                     sh """
                         pwd
                         ls -l
-                        sudo cp -r * /var/www/html
+                        sudo cp -r * /var/www/html/lifeline-web
                     """ 
                 }
             }
